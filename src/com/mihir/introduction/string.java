@@ -2,9 +2,10 @@ package com.mihir.introduction;
 
 import java.sql.SQLOutput;
 import java.util.Arrays;
+import java.util.StringTokenizer;
 
 public class string {
-    public static void main(String[] args) {
+    public static void main(String[] a) {
 //        String A = "helloworld";
 //        String a = A.substring(3, 7);
 //        System.out.println(a);
@@ -50,17 +51,28 @@ public class string {
 //        System.out.println(smallest + "\n" +  largest);
 //
 
-        String s = "madam";
-        StringBuilder sb = new StringBuilder(s);
-        sb.reverse();
-        String rev = sb.toString();
+//        String s = "madam";
+//        StringBuilder sb = new StringBuilder(s);
+//        sb.reverse();
+//        String rev = sb.toString();
+//
+//        if (s.equals(rev)){
+//            System.out.println("true");
+//        }else {
+//            System.out.println("false");
+//        }
 
-        if (s.equals(rev)){
-            System.out.println("true");
-        }else {
-            System.out.println("false");
+
+
+//        StringBuffer sb = new StringBuffer("Mihir");
+//        System.out.println(sb.capacity());
+
+        String s = "I am ready to play cricket";
+        StringTokenizer st = new StringTokenizer(s);
+
+        while (st.hasMoreTokens()){
+            System.out.println(st.nextToken());
         }
-
     }
 
 
